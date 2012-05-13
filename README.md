@@ -1,4 +1,4 @@
-sketches
+Sketches
 ========
 
-scratchspace
+This is a general purpose scratch space for playing with code ideas.
