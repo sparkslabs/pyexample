@@ -26,9 +26,9 @@ def find_packages(path, base="" ):
 packages = find_packages(".")
 package_names = packages.keys()
 
-setup(name = "sparkslabs sketch modules",
+setup(name = "sparkslabs-sketches",
       version = "1.0.0",
-      description = "Sketches",
+      description = "sparkslabs-sketches",
      
       author = "Michael Sparks",
       author_email = "sparks.m@gmail.com",
