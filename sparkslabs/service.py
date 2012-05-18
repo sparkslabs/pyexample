@@ -9,7 +9,7 @@ try:
 except IOError:
     config=json.load(open("../etc/sparkservice/config.json"))
 
-logfile="/var/log/sparkslabs.service.log"
+logfile="/var/log/sparkservice/service.log"
 start = time.time()
 count = 0
 
