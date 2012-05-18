@@ -18,7 +18,7 @@ install:
 buildrpm:
 	$(PYTHON) setup.py bdist_rpm --post-install=rpm/postinstall --pre-uninstall=rpm/preuninstall
 
-builddeb:
+deb:
 	debuild
 
 clean:
