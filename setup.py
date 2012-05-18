@@ -36,9 +36,16 @@ setup(name = "sparkslabs-sketches",
       license ="Apache Software License",
       packages = package_names,
       package_dir = packages,
+      scripts = [
+                  'scripts/sparkservice',
+                ],
+      data_files=[
+                   ('/etc/init',         ['etc/init/sparkservice.conf']),
+                   ('/etc/sparkservice', ["etc/sparkservice/config.json"])
+                 ],
+
       long_description = """
 This is initially just a collection of random test ideas. It may grow into
 something more interesting.  It may not.
 """
       )
-
