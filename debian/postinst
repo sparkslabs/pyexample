@@ -1,1 +1,4 @@
 echo "THIS IS RUNNING AFTER DEBIAN PACKAGE INSTALLATION"
+echo "Adding sparkservice user"
+sudo useradd sparkservice --system --no-create-home  --home-dir /nonexistent
+echo "done"

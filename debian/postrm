@@ -1,1 +1,4 @@
 echo "THIS IS RUNNING AFTER THE PACKAGE HAS BEEN DELETED"
+echo "Removing user"
+deluser sparkservice
+echo "done"
