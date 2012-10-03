@@ -1,1 +1,1 @@
-etc/logrotate.d/sparkservice
+etc/logrotate.d/pyexampleservice

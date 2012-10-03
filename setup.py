@@ -26,22 +26,22 @@ def find_packages(path, base="" ):
 packages = find_packages(".")
 package_names = packages.keys()
 
-setup(name = "sparkslabs-sketches",
+setup(name = "pyexample-sketches",
       version = "1.0.0",
-      description = "sparkslabs-sketches",
+      description = "pyexample-sketches",
      
       author = "Michael Sparks",
-      author_email = "sparks.m@gmail.com",
-      url = "http://www.sparkslabs.com/michael/",
+      author_email = "michael.sparks@bbc.co.uk",
+      url = "http://www.rd.bbc.co.uk/~michael/",
       license ="Apache Software License",
       packages = package_names,
       package_dir = packages,
       scripts = [
-                  'scripts/sparkservice',
+                  'scripts/pyexampleservice',
                 ],
       data_files=[
-                   ('/etc/init',         ['etc/init/sparkservice.conf']),
-                   ('/etc/sparkservice', ["etc/sparkservice/config.json"])
+                   ('/etc/init',         ['etc/init/pyexampleservice.conf']),
+                   ('/etc/pyexampleservice', ["etc/pyexampleservice/config.json"])
                  ],
 
       long_description = """

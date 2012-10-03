@@ -5,11 +5,11 @@ import sys
 import json
 
 try:
-    config=json.load(open("/etc/sparkservice/config.json"))
+    config=json.load(open("/etc/pyexampleservice/config.json"))
 except IOError:
-    config=json.load(open("../etc/sparkservice/config.json"))
+    config=json.load(open("../etc/pyexampleservice/config.json"))
 
-logfile="/var/log/sparkservice/service.log"
+logfile="/var/log/pyexampleservice/service.log"
 start = time.time()
 count = 0
 
@@ -40,6 +40,6 @@ def main():
         time.sleep(5)
 
 if __name__ == "__main__":
-    logfile = "sparkslabs.service.log"
+    logfile = "pyexample.service.log"
     main()
 

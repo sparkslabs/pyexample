@@ -1,6 +1,0 @@
-#!/usr/bin/python
-
-from sparkslabs.service import main
-
-main()
-
