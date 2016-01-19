@@ -1,4 +1,4 @@
-PyPackagingExample
+PyExample
 ==================
 
 This is an example python repository for the purpose of keeping track of how to do packaging nicely.
