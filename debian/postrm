@@ -1,3 +1,0 @@
-echo "Removing user"
-deluser pyexampleservice
-echo "done"
