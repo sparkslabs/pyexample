@@ -1,6 +1,7 @@
 PYTHON=`which python`
 DESTDIR=/
 PROJECT=pyexample
+VERSION=1.0.0
 
 all:
 	@echo "make source - Create source package"
@@ -19,7 +20,13 @@ buildrpm:
 	$(PYTHON) setup.py bdist_rpm --post-install=rpm/postinstall --pre-uninstall=rpm/preuninstall
 
 deb:
-	debuild
+	python setup.py sdist
+	cd dist && py2dsc $(PROJECT)-* && cd deb_dist/$(PROJECT)-$(VERSION) && debuild -uc -us
+
+ppadeb:
+	python setup.py sdist
+	cd dist && py2dsc $(PROJECT)-* && cd deb_dist/$(PROJECT)-$(VERSION) && debuild -S && cd .. && dput ppa:sparkslabs/packages $(PROJECT)_*_source.changes
+	@echo "Clean up dist before uploading to pypi, or it'll contain too much junk"
 
 clean:
 	$(PYTHON) setup.py clean

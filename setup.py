@@ -26,13 +26,12 @@ def find_packages(path, base="" ):
 packages = find_packages(".")
 package_names = packages.keys()
 
-setup(name = "pyexample-sketches",
+setup(name = "pyexample",
       version = "1.0.0",
-      description = "pyexample-sketches",
-     
-      author = "Michael Sparks",
-      author_email = "michael.sparks@bbc.co.uk",
-      url = "http://www.rd.bbc.co.uk/~michael/",
+      description = "pyexample",
+      author = "Michael Sparks (sparkslabs)",
+      author_email = "sparks.m@gmail.com",
+      url = "http://www.sparkslabs.com/michael/",
       license ="Apache Software License",
       packages = package_names,
       package_dir = packages,
